@@ -20,7 +20,12 @@ driver.find_element(By.LINK_TEXT, "vs Computer").click()
 driver.implicitly_wait(2)
 webdriver.ActionChains(driver).send_keys(Keys.ESCAPE).perform()
 driver.implicitly_wait(2)
-driver.find_element(By.LINK_TEXT, "Choose").send_keys("\n")
+
+webdriver.ActionChains(driver).send_keys(Keys.TAB).perform()
+driver.implicitly_wait(2)
+
+webdriver.ActionChains(driver).send_keys(Keys.ESCAPE).perform()
+#driver.find_element(By.LINK_TEXT, "Choose").send_keys("\n")
 #link.click()
 
 time.sleep(5000)
