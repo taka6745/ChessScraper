@@ -21,10 +21,22 @@ driver.implicitly_wait(2)
 webdriver.ActionChains(driver).send_keys(Keys.ESCAPE).perform()
 driver.implicitly_wait(2)
 
-webdriver.ActionChains(driver).send_keys(Keys.TAB).perform()
+#The two following loops use the tab symbol to navigate to the correct
+#hyperlink to press. This is obviously bad code and should be changed to
+#find the correct link directly, but for some reason using By.LINK_TEXT
+#wasn't working for me.
+for i in range(15):
+    webdriver.ActionChains(driver).send_keys(Keys.TAB).perform()
 driver.implicitly_wait(2)
 
-webdriver.ActionChains(driver).send_keys(Keys.ESCAPE).perform()
+webdriver.ActionChains(driver).send_keys(Keys.RETURN).perform()
+
+driver.implicitly_wait(2)
+
+for i in range(18):
+    webdriver.ActionChains(driver).send_keys(Keys.TAB).perform()
+
+webdriver.ActionChains(driver).send_keys(Keys.RETURN).perform()
 #driver.find_element(By.LINK_TEXT, "Choose").send_keys("\n")
 #link.click()
 
