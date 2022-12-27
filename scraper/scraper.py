@@ -31,8 +31,7 @@ def playComputer(level: int): #clicks engine and sets the level, starts at 1 and
         webdriver.ActionChains(driver).send_keys(Keys.PAGE_DOWN).perform()
         driver.implicitly_wait(2)
     WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH, '//*[@id="board-layout-sidebar"]/div/section/div/div/div[10]/div/div[2]/div/div/img')))
-    driver.find_element(
-        By.XPATH, '//*[@id="board-layout-sidebar"]/div/section/div/div/div[10]/div/div[2]/div/div/img').click()
+    driver.find_element(By.XPATH, '//*[@id="board-layout-sidebar"]/div/section/div/div/div[10]/div/div[2]/div/div/img').click()
     
     driver.find_element(By.XPATH, "//button[@title='Choose']").click()
     WebDriverWait(driver, 100).until(EC.presence_of_element_located((By.CLASS_NAME, "slider-input")))
