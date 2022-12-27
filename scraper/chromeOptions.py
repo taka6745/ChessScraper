@@ -3,7 +3,7 @@ op = Options()
 op.add_argument("disable-logging")
 op.add_argument("log-level=3")
 op.add_extension("scraper/chessKeyboardExtension.crx")
-
+print() #why is this 'unreachable' i have no clue
  
 
 """
