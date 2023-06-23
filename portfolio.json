@@ -1,0 +1,9 @@
+[{
+            title: "Chess Scraper",
+            description: "This project is an API for a portfolio website. It is built using Node.js and serves as a backend that interacts with a MySQL database to manage portfolio projects. The API fetches repositories from GitHub and looks for a portfolio.json file in each repository to collect portfolio project data. The entire project is containerized using Docker and orchestrated with Docker Compose for easy deployment.",
+            type: "API",
+            photo: "https://image.shutterstock.com/image-photo/image-250nw-725888862.jpg",
+            tags: "Docker, Node.js, SQL",
+            related_projects: "Portfolio Site",
+            link: "https://github.com/taka6745/github-portfolio-api",
+          }]
