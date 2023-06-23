@@ -1,9 +1,9 @@
 {
     "title": "Chess.com Scraper",
-    "description": "This project involves scraping data and automating the input of moves on Chess.com using Python and Selenium. Selenium is a powerful tool for controlling web browsers through programs and performing browser automation. It is functional for all browsers, works on all major operating systems, and is available in various languages. In this project, Python scripts are used to scrape chess game data and then interact with the Chess.com website to input moves into an online game.",
+    "description": "In this project, Python scripts are used to scrape chess game data and then interact with the Chess.com website to input moves into an online game.",
     "type": "API",
-    "photo": "https://images.chesscomfiles.com/uploads/v1/blog/291978.333e4ddb.5000x5000o.d095f7d8a591.png",
-    "tags": "Python, Selenium, Web Scraping, Automation, Chess",
+    "photo": "https://play-lh.googleusercontent.com/a7R5nyeaX8lIEWdBOxjlvbyq9LcFwh3XMvNtBPEKR3LPGgdvgGrec4sJwn8tUaaSkw",
+    "tags": "Python, Selenium, Scraping, Automation, Chess",
     "related_projects": "Chess Game"
 }
 
